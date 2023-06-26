@@ -7,7 +7,7 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
     # create db fellaverse manually in IDEA
-    url: jdbc:mysql://mysql:3306/fellaverse?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://mysql/fellaverse?useSSL=false&serverTimezone=UTC
     username: root
     password: zesqiq-6ryvte-zesqiq-6ryvte-uwaterloo
   jpa:

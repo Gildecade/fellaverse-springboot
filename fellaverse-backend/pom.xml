@@ -81,7 +81,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.fellaverse.backend.Entry_8080</mainClass>
+                    <mainClass>com.fellaverse.backend.Entry_9001</mainClass>
                     <layout>JAR</layout>
                 </configuration>
 
