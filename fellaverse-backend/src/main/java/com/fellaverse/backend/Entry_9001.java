@@ -5,8 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-public class Entry_8080 {
+public class Entry_9001 {
     public static void main(String[] args) {
-        SpringApplication.run(Entry_8080.class, args);
+        SpringApplication.run(Entry_9001.class, args);
     }
 }
