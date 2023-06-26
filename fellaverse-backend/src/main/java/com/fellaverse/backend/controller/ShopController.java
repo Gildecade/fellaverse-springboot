@@ -11,6 +11,7 @@ import com.fellaverse.backend.mapper.OrderMapper;
 import com.fellaverse.backend.service.*;
 import com.fellaverse.backend.validator.ValidGroup;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,7 +22,7 @@ import java.util.stream.Collectors;
  * Controller for user shop services, including listing course products, purchase course.
  */
 @RestController
-@RequestMapping("/api/shop")  // any requests under token will be proceeded
+@RequestMapping("/shop")  // any requests under token will be proceeded
 public class ShopController {
     @Autowired
     private ShopService shopService;
@@ -33,6 +34,7 @@ public class ShopController {
     @Autowired
     private CourseManageService courseManageService;
 
+    @Qualifier("adminManageUserInfoServiceImpl")
     @Autowired
     private UserManageService adminManageUserInfoService;
 

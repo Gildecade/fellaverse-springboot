@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
  * Controller for limit product shop service, including listing product and buying product.
  */
 @RestController
-@RequestMapping("/api/limitedProduct")
+@RequestMapping("/limitedProduct")
 @Slf4j
 public class LimitedProductController {
     @Autowired

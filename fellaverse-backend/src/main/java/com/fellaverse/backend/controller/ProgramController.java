@@ -25,7 +25,7 @@ import java.util.List;
  * Controller for admin program services, including CRUD.
  */
 @RestController
-@RequestMapping("/api/program")  // any requests under token will be proceeded
+@RequestMapping("/program")  // any requests under token will be proceeded
 public class ProgramController {
 
     private final ProgramService programService;

@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
  * Controller for function management, including CRUD.
  */
 @RestController
-@RequestMapping("api/management/function")
+@RequestMapping("/management/function")
 public class FunctionManageController {
     @Autowired
     private FunctionManageService functionManageService;

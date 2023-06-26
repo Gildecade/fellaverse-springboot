@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  * Controller for exercise management, including CRUD.
  */
 @RestController
-@RequestMapping("api/management/exercise")
+@RequestMapping("/management/exercise")
 public class ExerciseManageController {
     @Autowired
     private ExerciseManageService exerciseManageService;

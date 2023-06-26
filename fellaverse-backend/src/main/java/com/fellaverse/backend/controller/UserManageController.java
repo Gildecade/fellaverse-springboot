@@ -12,6 +12,7 @@ import com.fellaverse.backend.repository.FunctionRepository;
 import com.fellaverse.backend.repository.UserFunctionRepository;
 import com.fellaverse.backend.service.UserManageService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,8 +25,9 @@ import java.util.stream.Collectors;
  * Controller for user service management, including CRUD.
  */
 @RestController
-@RequestMapping("api/management/user")
+@RequestMapping("/management/user")
 public class UserManageController {
+    @Qualifier("userManageServiceImpl")
     @Autowired
     private UserManageService userManageService;
 

@@ -9,6 +9,7 @@ import com.fellaverse.backend.service.OrderManageService;
 import com.fellaverse.backend.service.UserManageService;
 import com.fellaverse.backend.validator.ValidGroup;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,7 +19,7 @@ import java.util.stream.Collectors;
  * Controller for admin order control services, including add and find.
  */
 @RestController
-@RequestMapping("/api/management/order")
+@RequestMapping("/management/order")
 public class OrderManageController {
     @Autowired
     private OrderManageService orderManageService;
@@ -29,6 +30,7 @@ public class OrderManageController {
     @Autowired
     private CourseManageService courseManageService;
 
+    @Qualifier("userManageServiceImpl")
     @Autowired
     private UserManageService userManageService;
     @GetMapping("")

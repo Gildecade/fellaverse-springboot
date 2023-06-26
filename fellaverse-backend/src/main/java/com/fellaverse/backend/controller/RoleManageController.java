@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
  * Controller for admin role management services, including CRUD.
  */
 @RestController
-@RequestMapping("/api/management/role")
+@RequestMapping("/management/role")
 public class RoleManageController {
     @Autowired
     private RoleManageService roleManageService;

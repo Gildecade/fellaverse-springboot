@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
  * Controller for user record services, including CRD.
  */
 @RestController
-@RequestMapping("/api/record")  // any requests under token will be proceeded
+@RequestMapping("/record")  // any requests under token will be proceeded
 public class RecordController {
 
     @Autowired

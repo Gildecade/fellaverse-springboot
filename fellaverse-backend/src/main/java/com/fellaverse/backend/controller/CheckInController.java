@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
  * Controller for user checkin service, including CRUD.
  */
 @RestController
-@RequestMapping("api/checkin")
+@RequestMapping("/checkin")
 public class CheckInController {
     @Autowired
     private CheckInService checkInService;

@@ -25,7 +25,7 @@ import java.util.stream.Collectors;
  * Controller for administrator management, including CRUD.
  */
 @RestController
-@RequestMapping("/api/management/admin")
+@RequestMapping("/management/admin")
 public class AdminManageController {
     @Autowired
     private AdminManageService adminManageService;

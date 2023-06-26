@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
  * Controller for homepage announcement management services, including CRUD.
  */
 @RestController
-@RequestMapping("api/management/prolist")
+@RequestMapping("/management/prolist")
 public class ProListManageController {
     @Autowired
     private ProListManageService proListManageService;

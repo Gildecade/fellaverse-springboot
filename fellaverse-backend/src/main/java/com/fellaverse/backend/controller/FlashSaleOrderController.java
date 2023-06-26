@@ -12,6 +12,7 @@ import com.fellaverse.backend.service.LimitedProductManageService;
 import com.fellaverse.backend.service.UserManageService;
 import com.fellaverse.backend.util.SnowflakeIdWorker;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,11 +22,12 @@ import java.util.stream.Collectors;
  * Controller for flash sale order management, including add and find.
  */
 @RestController
-@RequestMapping("/api/management/flashSaleOrder")
+@RequestMapping("/management/flashSaleOrder")
 public class FlashSaleOrderController {
     @Autowired
     private FlashSaleOrderService flashSaleOrderService;
 
+    @Qualifier("userManageServiceImpl")
     @Autowired
     private UserManageService userManageService;
 

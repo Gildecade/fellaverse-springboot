@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  * Controller for limited product management, including CRUD.
  */
 @RestController
-@RequestMapping("/api/management/limitedProduct")
+@RequestMapping("/management/limitedProduct")
 public class LimitedProductManageController {
     @Autowired
     private LimitedProductManageService limitedProductManageService;

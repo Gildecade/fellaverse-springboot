@@ -18,7 +18,7 @@ import java.util.List;
  * Controller for course management, including CRUD.
  */
 @RestController
-@RequestMapping("/api/management/shop/course")
+@RequestMapping("/management/shop/course")
 public class CourseManageController {
     private final CourseManageService courseManageService;
     private final CourseMapper courseMapper;

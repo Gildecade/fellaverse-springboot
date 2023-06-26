@@ -17,7 +17,7 @@ import java.util.List;
  * Controller for user schedule services, including CRUD.
  */
 @RestController
-@RequestMapping("/api/schedule")  // any requests under token will be proceeded
+@RequestMapping("/schedule")  // any requests under token will be proceeded
 public class ScheduleController {
 
     private final ScheduleService scheduleService;
