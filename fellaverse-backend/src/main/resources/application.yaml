@@ -1,0 +1,44 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: backend-entry
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # create db fellaverse manually in IDEA
+    url: jdbc:mysql://mysql/fellaverse?useSSL=false&serverTimezone=UTC
+    username: root
+    password: zesqiq-6ryvte-zesqiq-6ryvte-uwaterloo
+
+# enable eureka status, then we can access to port/actuator/info
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    env:
+      enabled: true
+# springboot actuator info
+info:
+  app.name: backend-entry
+  author: GCH
+
+fellaverse:
+  security:
+    config:
+      jwt:
+        sign: fellaverse
+        issuer: fellas
+        secret: www.fellaverse.com/gch/darren/chiu/jingshuo
+        expire: 3600
+      password:
+        encrypt:
+          repeat: 5
+          salt: www.fellaverse.com
